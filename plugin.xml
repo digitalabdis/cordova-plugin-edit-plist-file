@@ -44,7 +44,21 @@
             </array>
         </config-file>
         
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">
+            <string>This app requires constant access to your location in order to track your position, even ehen the screen is off or the app is in the background and foreground.</string>
+        </config-file>
         
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
+            <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the foreground.</string>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSLocationUsageDescription" mode="merge">
+            <string>This app requires constant access to your location in order to track your position, even ehen the screen is off.</string>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge">
+            <string>This app requires constant access to your location in order to track your position, even when the screen is off.</string>
+        </config-file>
         
     </platform>
     
